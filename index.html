@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu with Navbar</title>
+  <!-- font-awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+  />
+  <!-- styles -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="#" class="navbar-logo">My Restaurant</a>
+      <ul class="navbar-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="navbar-toggle">
+        <i class="fas fa-bars"></i> <!-- FontAwesome icon for toggle -->
+      </button>
+    </div>
+  </nav>
+
+  <!-- Menu Section -->
+  <section class="menu" id="menu"> <!-- Added ID for linking -->
+    <!-- title -->
+    <div class="title">
+      <h2>Our Menu</h2>
+      <div class="underline"></div>
+    </div>
+    <!-- filter buttons -->
+    <div class="btn-container"></div>
+    <!-- menu items -->
+    <div class="section-center">
+      <!-- single item -->
+      <article class="menu-item">
+        <img src="./menu-item.jpeg" alt="menu item" class="photo" />
+        <div class="item-info">
+          <header>
+            <h4>Buttermilk Pancakes</h4>
+            <h4 class="price">$15</h4>
+          </header>
+          <p class="item-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Repudiandae, sint quam. Et reprehenderit fugiat nesciunt inventore
+            laboriosam excepturi! Quo, officia.
+          </p>
+        </div>
+      </article>
+      <!-- More menu items -->
+    </div>
+  </section>
+
+  <!-- JavaScript -->
+  <script src="app.js"></script>
+  <!-- Footer -->
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-section contact-info">
+      <h4>Contact Us</h4>
+      <p>
+        Customer Service: 1-800-123-4567<br>
+        Email: support@restaurant.com<br>
+        Address: 123 E-commerce St., Suite 100, Hyderabad, India
+      </p>
+    </div>
+    <div class="footer-section customer-service">
+      <h4>Customer Service</h4>
+      <ul>
+        <li><a href="shipping.html">Shipping Policy</a></li>
+        <li><a href="returns.html">Returns Policy</a></li>
+        <li><a href="terms.html">Terms & Conditions</a></li>
+      </ul>
+    </div>
+    <div class="footer-section social">
+      <h4>Follow Us</h4>
+      <ul class="social-links">
+        <li><a href="https://facebook.com">Facebook</a></li>
+        <li><a href="https://twitter.com">Twitter</a></li>
+        <li><a href="https://instagram.com">Instagram</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; {new Date().getFullYear()} My Restaurant. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
